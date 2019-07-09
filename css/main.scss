@@ -1,0 +1,131 @@
+/*CSS Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*CSS Reset*/
+
+:root {
+  --main-text-color: #454445; 
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-template-columns: auto repeat(11, 1fr);
+  /*Below is the col-1 of the main grid*/
+  .side-nav{
+    background: white;
+    height: 100vh;
+    .icon-wrapper{
+      .logo-icon{
+        margin: 20px;
+        font-size: 24px;
+        color: #d2d1d6;
+        border:2px solid black;
+        border-radius: 50%;
+      }
+      .sports-icon{
+        padding:20px;
+        color: #d2d1d6;
+      }
+    }
+  }
+  /*Above is the col-1 of the main grid*/
+  .right-section{
+    grid-column: 2 / 13;
+    grid-template-rows: auto auto;
+    .site-header{
+
+      .header-inner{
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        height: 64px;
+        background: #f7f7f6;
+        border-bottom:1px solid lightgrey;
+        padding: 0 25px;
+        .logo{
+          letter-spacing: 2px;
+    
+        }
+        .header-main-links{
+          display: flex;
+          color: var(--main-text-color);
+          .link{
+            margin: 0 16px;
+          }
+        }
+        .right-links{
+          display: flex;
+          .time{
+            background: white;
+            padding:12px 15px;
+            border-radius: 5px;
+            margin-right: 12px;
+            .number{
+              color: var(--main-text-color);
+            }
+            .time-zone{
+              color: #c7c6c7;
+            }
+          }
+          .login-btn{
+            background: #f5e35c;
+            padding:12px 28px;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+    .site-content{
+      display: grid;
+      
+      grid-template-columns: minmax(200px, 350px) repeat(2, 1fr);
+      height: 100vh;
+      .first-col{}
+      .second-col{}
+      .third-col{}
+    }
+  }
+}
+

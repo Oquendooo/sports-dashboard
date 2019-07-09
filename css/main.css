@@ -1,0 +1,158 @@
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*CSS Reset*/
+:root {
+  --main-text-color: #454445;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto (1fr)[11];
+      grid-template-columns: auto repeat(11, 1fr);
+  /*Below is the col-1 of the main grid*/
+  /*Above is the col-1 of the main grid*/
+}
+
+body .side-nav {
+  background: white;
+  height: 100vh;
+}
+
+body .side-nav .icon-wrapper .logo-icon {
+  margin: 20px;
+  font-size: 24px;
+  color: #d2d1d6;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+body .side-nav .icon-wrapper .sports-icon {
+  padding: 20px;
+  color: #d2d1d6;
+}
+
+body .right-section {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 11;
+  grid-column: 2 / 13;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+}
+
+body .right-section .site-header .header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 64px;
+  background: #f7f7f6;
+  border-bottom: 1px solid lightgrey;
+  padding: 0 25px;
+}
+
+body .right-section .site-header .header-inner .logo {
+  letter-spacing: 2px;
+}
+
+body .right-section .site-header .header-inner .header-main-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--main-text-color);
+}
+
+body .right-section .site-header .header-inner .header-main-links .link {
+  margin: 0 16px;
+}
+
+body .right-section .site-header .header-inner .right-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .right-section .site-header .header-inner .right-links .time {
+  background: white;
+  padding: 12px 15px;
+  border-radius: 5px;
+  margin-right: 12px;
+}
+
+body .right-section .site-header .header-inner .right-links .time .number {
+  color: var(--main-text-color);
+}
+
+body .right-section .site-header .header-inner .right-links .time .time-zone {
+  color: #c7c6c7;
+}
+
+body .right-section .site-header .header-inner .right-links .login-btn {
+  background: #f5e35c;
+  padding: 12px 28px;
+  border-radius: 5px;
+}
+
+body .right-section .site-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(200px, 350px) (1fr)[2];
+      grid-template-columns: minmax(200px, 350px) repeat(2, 1fr);
+  height: 100vh;
+}
+/*# sourceMappingURL=main.css.map */
