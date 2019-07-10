@@ -122,7 +122,82 @@ body{
       
       grid-template-columns: minmax(200px, 350px) repeat(2, 1fr);
       height: 100vh;
-      .first-col{}
+      .first-col{
+        .first-col-inner{
+          padding: 25px 20px;
+          .sub-heading{
+            color: #d8d7d6;
+            margin-bottom: 5px;
+          }
+          .heading{
+            .first-part{
+              color: #090711;
+              font-size:1.2rem;
+              font-weight: 500;
+              
+            }
+            .second-part{
+              color: #d4d3d1;
+              
+            }
+          }
+          .live-scores{
+            display: flex;
+            .score{
+              display: flex;
+              .team-icon{}
+              .number{}
+              .seperator{}
+            }
+          }
+          .country-section{
+            .top-div{
+              .heading{}
+              .add-link{}
+            }
+            .countries{
+              .country{
+                display: flex;
+                justify-content: space-between;
+                .flag{
+                  img{
+                    width: 25px;
+                    height: 25px;
+                  }
+                }
+                .name{}
+                .number{}
+              }
+            }
+            .more-countries-dropdown{
+              .btn{
+                .title{}
+                .fas.fa-chevron-down{}
+              }
+            }
+          }
+          .league-section{
+            .top-div{
+              .heading{}
+              .add-link{}
+            }
+            .leagues{
+              .league{
+                display: flex;
+                .flag{}
+                .name{}
+                .number{}
+              }
+            }
+            .more-leagues-dropdown{
+              .btn{
+                .title{}
+                .fas.fa-chevron-down{}
+              }
+            }
+          }
+        }
+      }
       .second-col{}
       .third-col{}
     }

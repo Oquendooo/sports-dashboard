@@ -155,4 +155,55 @@ body .right-section .site-content {
       grid-template-columns: minmax(200px, 350px) repeat(2, 1fr);
   height: 100vh;
 }
+
+body .right-section .site-content .first-col .first-col-inner {
+  padding: 25px 20px;
+}
+
+body .right-section .site-content .first-col .first-col-inner .sub-heading {
+  color: #d8d7d6;
+  margin-bottom: 5px;
+}
+
+body .right-section .site-content .first-col .first-col-inner .heading .first-part {
+  color: #090711;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+body .right-section .site-content .first-col .first-col-inner .heading .second-part {
+  color: #d4d3d1;
+}
+
+body .right-section .site-content .first-col .first-col-inner .live-scores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .right-section .site-content .first-col .first-col-inner .live-scores .score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .right-section .site-content .first-col .first-col-inner .country-section .countries .country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .right-section .site-content .first-col .first-col-inner .country-section .countries .country .flag img {
+  width: 25px;
+  height: 25px;
+}
+
+body .right-section .site-content .first-col .first-col-inner .league-section .leagues .league {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=main.css.map */
