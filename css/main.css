@@ -162,7 +162,7 @@ body .right-section .site-content .first-col .first-col-inner {
 
 body .right-section .site-content .first-col .first-col-inner .sub-heading {
   color: #d8d7d6;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 body .right-section .site-content .first-col .first-col-inner .heading .first-part {
@@ -185,6 +185,11 @@ body .right-section .site-content .first-col .first-col-inner .live-scores .scor
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+body .right-section .site-content .first-col .first-col-inner .live-scores .score .team-icon img {
+  width: 20px;
+  height: 20px;
 }
 
 body .right-section .site-content .first-col .first-col-inner .country-section .countries .country {

@@ -127,7 +127,7 @@ body{
           padding: 25px 20px;
           .sub-heading{
             color: #d8d7d6;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
           }
           .heading{
             .first-part{
@@ -145,7 +145,12 @@ body{
             display: flex;
             .score{
               display: flex;
-              .team-icon{}
+              .team-icon{
+                img{
+                  width: 20px;
+                  height: 20px;
+                }
+              }
               .number{}
               .seperator{}
             }
